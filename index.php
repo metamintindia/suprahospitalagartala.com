@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +27,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="index.php">
                 <span class="supra">SUPRA</span> <span class="multi">MULTI-SPECIALITY</span> <span class="hospital">HOSPITAL</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -39,7 +38,7 @@
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#specialities">Specialities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Our Doctors</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item ms-3">
                         <button class="btn-appointment" data-bs-toggle="modal" data-bs-target="#appointmentModal">
@@ -132,7 +131,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="about-img">
-                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxuufdEEpSCpGfn8Icpbcyr2MsoL2xf9uMrD2-0UhTan2cNhbhTM7XBnA0bAY8euVoJxh5SfM9pPVvmoN3sMU-97XSzbC-VelPtZhFEcXRtLQkO6t2NEKXlGx4gI5XnM2hIg8Anz7zlZbfK=s1360-w1360-h1020-rw" alt="Hospital Building">
+                        <img src="assets/supra-hospital-agartala.jpg" alt="Hospital Building">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -153,48 +152,318 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
+    <!-- Our Medical Specialists Section -->
+    <section id="doctors" class="doctors-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <div class="stat-box">
-                        <i class="fas fa-user-md"></i>
-                        <h3 class="counter">50</h3>
-                        <p>Expert Doctors</p>
+            <div class="section-title">
+                <h2>Our Medical Specialists</h2>
+                <p>Meet our team of highly qualified and experienced medical professionals</p>
+            </div>
+            <div class="row g-4">
+                <!-- Doctor 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Dr. Abantika Nath">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Abantika Nath</h5>
+                            <span class="specialty">Laparoscopic & General Surgeon</span>
+                            <p class="qualification">MBBS, MS, DMAS, FMAS</p>
+                            <div class="doctor-reg">Reg: TSMC002171</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-box">
-                        <i class="fas fa-bed"></i>
-                        <h3 class="counter">100</h3>
-                        <p>Hospital Beds</p>
+
+                <!-- Doctor 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop" alt="Dr. Anita Baidya">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Anita Baidya</h5>
+                            <span class="specialty">Sonologist</span>
+                            <p class="qualification">MBBS</p>
+                            <div class="doctor-reg">Reg: TSMC001615</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-box">
-                        <i class="fas fa-procedures"></i>
-                        <h3 class="counter">5000</h3>
-                        <p>Surgeries Done</p>
+
+                <!-- Doctor 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop" alt="Dr. Arpan Bhattacharjee">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Arpan Bhattacharjee</h5>
+                            <span class="specialty">Gynecologist</span>
+                            <p class="qualification">MBBS, DGO</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-box">
-                        <i class="fas fa-smile"></i>
-                        <h3 class="counter">10000</h3>
-                        <p>Happy Patients</p>
+
+                <!-- Doctor 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop" alt="Dr. Arpan Mitra">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Arpan Mitra</h5>
+                            <span class="specialty">Neurologist</span>
+                            <p class="qualification">MD Medicine, DM Neurology</p>
+                            <div class="doctor-reg">AGMC & GBPH</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Doctor 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop" alt="Dr. Ashok Majumdar">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Ashok Majumdar</h5>
+                            <span class="specialty">Gynecologist</span>
+                            <p class="qualification">MBBS, DGO</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=400&h=400&fit=crop" alt="Dr. B. Sindhu">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. B. Sindhu</h5>
+                            <span class="specialty">Obstetrician & Gynecologist</span>
+                            <p class="qualification">MBBS, MS (O&G)</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=400&fit=crop" alt="Dr. Bidhan Chandra Roy">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Bidhan Chandra Roy</h5>
+                            <span class="specialty">General Physician</span>
+                            <p class="qualification">MBBS</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=400&fit=crop" alt="Dr. Bidhan Das">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Bidhan Das</h5>
+                            <span class="specialty">ENT Specialist</span>
+                            <p class="qualification">MBBS, MS (ENT)</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 9 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=400&h=400&fit=crop" alt="Dr. Bijayaditya Datta">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Bijayaditya Datta</h5>
+                            <span class="specialty">Consultant Physician</span>
+                            <p class="qualification">MBBS, MD (Medicine)</p>
+                            <div class="doctor-reg">Reg: TSMC000447</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 10 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&h=400&fit=crop" alt="Dr. Chayan Sarkar">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Chayan Sarkar</h5>
+                            <span class="specialty">Pediatrician</span>
+                            <p class="qualification">MBBS, MD Pediatric</p>
+                            <div class="doctor-reg">Reg: TSMC002483</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 11 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop" alt="Dr. Debajit Debnath">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Debajit Debnath</h5>
+                            <span class="specialty">Obstetrician & Gynecologist</span>
+                            <p class="qualification">MBBS, MS (O&G)</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 12 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop" alt="Dr. Diptanu Deb">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Diptanu Deb</h5>
+                            <span class="specialty">Surgeon</span>
+                            <p class="qualification">MBBS, DNB (Surgery)</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 13 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=400&fit=crop" alt="Dr. Diptanu Laskar">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Diptanu Laskar</h5>
+                            <span class="specialty">General Physician</span>
+                            <p class="qualification">MBBS</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 14 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Dr. Diptendu Chaudhuri">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Diptendu Chaudhuri</h5>
+                            <span class="specialty">General & Laparoscopic Surgeon</span>
+                            <p class="qualification">MBBS, MS, FMAS</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 15 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop" alt="Dr. J.K. Nag">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. J.K. Nag</h5>
+                            <span class="specialty">Orthopedic Surgeon</span>
+                            <p class="qualification">MS (Ortho)</p>
+                            <div class="doctor-reg">Registered Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 16 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop" alt="Dr. Himadri Shekhar Deb">
+                            <div class="doctor-overlay">
+                                <a href="doctors.php" class="btn btn-light btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h5>Dr. Himadri Shekhar Deb</h5>
+                            <span class="specialty">Orthopedic Surgeon</span>
+                            <p class="qualification">MBBS, MS Orthopaedic</p>
+                            <div class="doctor-reg">Reg: TSMC002037</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Doctors Button -->
+            <div class="text-center mt-5">
+                <a href="doctors.php" class="btn-view-all">
+                    <i class="fas fa-user-md"></i> View All Doctors & Book Appointment
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Specialities Section -->
-    <section id="specialities" class="services-section">
+    <!-- Services Section -->
+    <section id="services" class="services-section">
         <div class="container">
             <div class="section-title">
-                <h2>What We Do</h2>
-                <p>Our Core Specialities</p>
+                <h2>Our Services</h2>
+                <p>Comprehensive healthcare services for all your medical needs</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
@@ -203,41 +472,30 @@
                             <i class="fas fa-bone"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Joint Replacement</h4>
-                            <p>Expert hip and knee replacement surgery using advanced techniques and prosthetics for improved mobility and pain relief.</p>
+                            <h4>Orthopedics</h4>
+                            <p>Expert care for bones, joints, and muscles. Specializing in joint replacement, arthroscopy, and ligament repairs.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="fas fa-x-ray"></i>
+                            <i class="fas fa-baby"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Arthroscopy</h4>
-                            <p>Minimally invasive joint surgery for diagnosis and treatment of various orthopedic conditions with faster recovery.</p>
+                            <h4>Pediatrics</h4>
+                            <p>Comprehensive child healthcare services with experienced pediatricians and child specialists.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="fas fa-band-aid"></i>
+                            <i class="fas fa-female"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Ligament Repair</h4>
-                            <p>Advanced ligament reconstruction surgery for sports injuries and trauma with rehabilitation support.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-icon-box">
-                            <i class="fas fa-crutch"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Osteoarthritis</h4>
-                            <p>Comprehensive treatment for osteoarthritis including medication, therapy, and surgical interventions.</p>
+                            <h4>Gynecology</h4>
+                            <p>Complete women's health services including obstetrics, gynecology, and maternity care.</p>
                         </div>
                     </div>
                 </div>
@@ -247,19 +505,30 @@
                             <i class="fas fa-heartbeat"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Rheumatoid Arthritis</h4>
-                            <p>Specialized care for rheumatoid arthritis with personalized treatment plans and ongoing management.</p>
+                            <h4>General Medicine</h4>
+                            <p>Expert medical consultation and treatment for all general health conditions and diseases.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="fas fa-spine"></i>
+                            <i class="fas fa-procedures"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Hip/Spine Deformation</h4>
-                            <p>Expert treatment for spinal and hip deformities with corrective surgery and rehabilitation.</p>
+                            <h4>Surgery</h4>
+                            <p>Advanced surgical procedures including laparoscopic and minimally invasive surgeries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Diagnostics</h4>
+                            <p>State-of-the-art diagnostic facilities including X-ray, ultrasound, and laboratory services.</p>
                         </div>
                     </div>
                 </div>
@@ -267,48 +536,36 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="about-section">
+    <!-- Stats Section -->
+    <section class="stats-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>Comprehensive Healthcare Solutions</p>
-            </div>
-            <div class="row g-4">
+            <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-stethoscope"></i>
-                        </div>
-                        <h4>Multi Specialty OPD</h4>
-                        <p>Outpatient department with multiple specialties for comprehensive medical consultations</p>
+                    <div class="stat-box">
+                        <i class="fas fa-user-md"></i>
+                        <h3 class="counter">25</h3>
+                        <p>Expert Doctors</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-hospital-user"></i>
-                        </div>
-                        <h4>Super Specialty OPD</h4>
-                        <p>Advanced super specialty consultation services with expert doctors</p>
+                    <div class="stat-box">
+                        <i class="fas fa-smile"></i>
+                        <h3 class="counter">5000</h3>
+                        <p>Happy Patients</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <h4>Pediatrics Treatment</h4>
-                        <p>Comprehensive child healthcare services with experienced pediatricians</p>
+                    <div class="stat-box">
+                        <i class="fas fa-procedures"></i>
+                        <h3 class="counter">2500</h3>
+                        <p>Successful Surgeries</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-female"></i>
-                        </div>
-                        <h4>Gynecology Treatment</h4>
-                        <p>Complete women's health services including obstetrics and gynecology</p>
+                    <div class="stat-box">
+                        <i class="fas fa-award"></i>
+                        <h3 class="counter">10</h3>
+                        <p>Years Experience</p>
                     </div>
                 </div>
             </div>
@@ -320,17 +577,17 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact Us</h2>
-                <p>Get in Touch with Us</p>
+                <p>Get in touch with us for appointments and inquiries</p>
             </div>
-            <div class="row g-4">
+            <div class="row">
                 <div class="col-lg-4">
                     <div class="contact-info">
-                        <h3 class="mb-4">Contact Information</h3>
+                        <h4 class="mb-4">Get In Touch</h4>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <h5>Address</h5>
-                                <p>Old Motor Stand, Oppo. of Yamaha Showroom, Agartala, Tripura, 799001</p>
+                                <h5>Location</h5>
+                                <p>Old Motor Stand, Agartala<br>Tripura, India</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -407,7 +664,8 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#specialities">Specialities</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="doctors.php">Book Doctor</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -463,7 +721,10 @@
                                 <option>Pediatrics</option>
                                 <option>Gynecology</option>
                                 <option>General Medicine</option>
-                                <option>Emergency</option>
+                                <option>Surgery</option>
+                                <option>ENT</option>
+                                <option>Neurology</option>
+                                <option>Urology</option>
                             </select>
                         </div>
                         <div class="mb-3">

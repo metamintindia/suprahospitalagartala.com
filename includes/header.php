@@ -50,6 +50,7 @@ if (!defined('SITE_NAME')) {
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/style.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/detail-pages.css">
     
     <!-- Additional Page-Specific CSS -->
     <?php if (isset($page_css)): ?>

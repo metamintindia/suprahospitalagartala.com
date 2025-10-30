@@ -26,7 +26,7 @@ include 'includes/nav.php';
     <div class="container">
         
         <!-- Section Header -->
-        <div class="section-header" data-aos="fade-up">
+    <!--    <div class="section-header" data-aos="fade-up">
             <span class="section-badge">
                 <i class="fas fa-user-md"></i> Medical Experts
             </span>
@@ -35,7 +35,7 @@ include 'includes/nav.php';
                 Our team of 25+ experienced doctors are dedicated to providing exceptional<br>
                 medical care across multiple specialties
             </p>
-        </div>
+        </div>-->
 
         <!-- Search Box -->
         <div class="doctor-search-box" data-aos="fade-up" data-aos-delay="100">

@@ -43,7 +43,7 @@ define('YOUTUBE_URL', '#');
 define('GOOGLE_MAPS_EMBED', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.6577728103284!2d91.28867509999999!3d23.830765599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753f5001ea4fdc3%3A0x4a9b5fd69513e6f0!2sSupra%20Multi-speciality%20Hospital!5e0!3m2!1sen!2sin!4v1761733828000!5m2!1sen!2sin');
 
 // Working Hours
-define('WORKING_HOURS', 'Mon - Sat: 9:00 AM - 8:00 PM');
+define('WORKING_HOURS', 'Timing- 24 Hours Open');
 define('EMERGENCY_HOURS', 'Sunday: Emergency Only');
 
 // Meta Information

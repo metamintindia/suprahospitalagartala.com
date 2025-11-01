@@ -1829,3 +1829,586 @@ ul {
 .doctor-card-enhanced:hover::before {
     opacity: 1;
 }
+/**
+ * Supra Multi-Speciality Hospital
+ * Enhanced Services Page CSS
+ * Premium UI/UX with Better Icons and Colors
+ * 
+ * @version 2.0.0
+ * @author Meta Mint Private Limited
+ */
+
+/* ========================================
+   SERVICE CARD PREMIUM DESIGN
+======================================== */
+
+.service-card-premium {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.service-card-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #1e3a8a, #DC143C);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.service-card-premium:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card-premium:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 60px rgba(30, 58, 138, 0.15);
+    border-color: rgba(30, 58, 138, 0.1);
+}
+
+/* Featured Service Cards */
+.service-card-premium.featured {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    border: 2px solid #818cf8;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.featured-badge i {
+    font-size: 12px;
+}
+
+/* Service Icon Box with Color-Coded Gradients */
+.service-icon-box {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.service-icon-box i {
+    font-size: 42px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease;
+}
+
+.service-card-premium:hover .service-icon-box i {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Color-Coded Service Icons */
+.service-icon-box.ortho {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.service-icon-box.surgery {
+    background: linear-gradient(135deg, #DC143C, #b91c1c);
+    box-shadow: 0 8px 25px rgba(220, 20, 60, 0.3);
+}
+
+.service-icon-box.gynec {
+    background: linear-gradient(135deg, #ec4899, #be185d);
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+}
+
+.service-icon-box.medicine {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+}
+
+.service-icon-box.paeds {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+}
+
+.service-icon-box.uro {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+.service-icon-box.onco-gynec {
+    background: linear-gradient(135deg, #ec4899, #be185d);
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+}
+
+.service-icon-box.onco {
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.3);
+}
+
+.service-icon-box.neuro {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}
+
+.service-icon-box.ent {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+}
+
+.service-icon-box.diagnostic {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
+}
+
+.service-icon-box.pharmacy {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
+}
+
+/* Service Card Content */
+.service-card-premium h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.service-card-premium > p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Service Features List */
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #475569;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.service-features li:last-child {
+    border-bottom: none;
+}
+
+.service-features li i {
+    color: #22c55e;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Service More Button */
+.btn-service-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1e3a8a, #DC143C);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.btn-service-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-service-more:hover::before {
+    left: 100%;
+}
+
+.btn-service-more:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+    color: #ffffff;
+}
+
+.btn-service-more i {
+    transition: transform 0.3s ease;
+}
+
+.btn-service-more:hover i {
+    transform: translateX(5px);
+}
+
+/* ========================================
+   FACILITIES CARDS
+======================================== */
+
+.facility-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 2px solid transparent;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(30, 58, 138, 0.12);
+    border-color: rgba(30, 58, 138, 0.1);
+}
+
+.facility-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.facility-card:hover .facility-icon {
+    background: linear-gradient(135deg, #1e3a8a, #DC143C);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.facility-icon i {
+    font-size: 32px;
+    color: #1e3a8a;
+    transition: color 0.3s ease;
+}
+
+.facility-card:hover .facility-icon i {
+    color: #ffffff;
+}
+
+.facility-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.facility-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ========================================
+   CTA SECTION - FIXED COLORS LIKE HOME PAGE
+======================================== */
+
+.cta-section-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #DC143C 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section-gradient::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.cta-section-gradient::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.cta-box-services {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-content {
+    padding: 0;
+}
+
+/* WHITE TEXT FOR CTA TITLE AND DESCRIPTION */
+.cta-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta-title i {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+    color: #ffffff !important;
+    line-height: 1.7;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* White Button for CTA */
+.btn-cta-white {
+    background: #ffffff !important;
+    color: #1e3a8a !important;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+    padding: 14px 35px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-white:hover {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Outline White Button */
+.btn-outline-light {
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 14px 35px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background: #ffffff !important;
+    color: #1e3a8a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 1199px) {
+    .service-card-premium {
+        padding: 30px;
+    }
+
+    .service-icon-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .service-icon-box i {
+        font-size: 38px;
+    }
+
+    .service-card-premium h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+
+    .btn-cta-white,
+    .btn-outline-light {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .btn-outline-light {
+        margin-top: 15px !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-card-premium {
+        padding: 25px;
+    }
+
+    .service-icon-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .service-icon-box i {
+        font-size: 32px;
+    }
+
+    .service-card-premium h3 {
+        font-size: 1.2rem;
+    }
+
+    .facility-card {
+        padding: 25px;
+    }
+
+    .facility-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .facility-icon i {
+        font-size: 28px;
+    }
+
+    .cta-section-gradient {
+        padding: 60px 0;
+    }
+
+    .cta-title {
+        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cta-title i {
+        font-size: 1.5rem;
+    }
+
+    .cta-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .service-card-premium {
+        padding: 20px;
+    }
+
+    .service-features li {
+        font-size: 0.85rem;
+    }
+
+    .featured-badge {
+        top: 15px;
+        right: 15px;
+        padding: 5px 12px;
+        font-size: 0.75rem;
+    }
+
+    .btn-service-more {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+@keyframes pulse-icon {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.service-card-premium:hover .service-icon-box {
+    animation: pulse-icon 1s ease-in-out infinite;
+}
+
+/* Loading State */
+.service-card-premium.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Accessibility */
+.service-card-premium:focus-within {
+    outline: 3px solid #1e3a8a;
+    outline-offset: 3px;
+}
+
+.btn-service-more:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* Print Styles */
+@media print {
+    .service-card-premium {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #e5e7eb;
+    }
+
+    .cta-section-gradient {
+        display: none;
+    }
+}

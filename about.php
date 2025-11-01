@@ -291,29 +291,34 @@ include 'includes/nav.php';
 </section>
 <!-- /Statistics Section -->
 
-<!-- CTA Section -->
-<section class="section">
+<!-- Call to Action Section - FIXED COLORS -->
+<section class="section cta-section-gradient">
     <div class="container">
-        <div class="cta-box-large" data-aos="zoom-in">
+        <div class="cta-box-services" data-aos="zoom-in">
             <div class="row align-items-center">
-                <div class="col-lg-8 mb-4 mb-lg-0">
-                    <h2 class="text-white mb-3">
-                        <i class="fas fa-calendar-check"></i> Book Your Appointment Today
-                    </h2>
-                    <p class="text-white mb-0 lead">Experience world-class healthcare with our team of expert doctors and modern facilities.</p>
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="cta-content">
+                        <h2 class="cta-title">
+                            <i class="fas fa-hand-holding-medical"></i> Need Medical Assistance?
+                        </h2>
+                        <p class="cta-text">
+                            Book your appointment today and get expert medical consultation<br class="d-none d-lg-block">
+                            from our experienced specialists.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a href="appointment.php" class="btn btn-light btn-lg">
-                        <i class="fas fa-calendar-alt"></i> Book Now
+                <div class="col-lg-6 text-lg-end">
+                    <a href="appointment.php" class="btn btn-light btn-lg btn-cta-white">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
                     </a>
-                    <a href="contact.php" class="btn btn-outline-light btn-lg ms-2">
-                        <i class="fas fa-phone"></i> Contact Us
+                    <a href="tel:<?php echo HOSPITAL_PHONE_1; ?>" class="btn btn-outline-light btn-lg mt-2 mt-lg-0 ms-lg-2">
+                        <i class="fas fa-phone"></i> Call Now
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- /CTA Section -->
+<!-- /Call to Action Section -->
 
 <?php include 'includes/footer.php'; ?>

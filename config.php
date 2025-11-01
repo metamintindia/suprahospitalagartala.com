@@ -29,7 +29,7 @@ define('SITE_URL', BASE_URL);
 // Contact Information
 define('HOSPITAL_PHONE_1', '9362244977');
 define('HOSPITAL_PHONE_2', '7085660887');
-define('HOSPITAL_EMAIL', 'info@suprahospitalagartala.com');
+define('HOSPITAL_EMAIL', 'mssupra25@gmail.com');
 define('HOSPITAL_ADDRESS', 'Old Motor Stand, Agartala, Tripura - 799001');
 
 // Social Media Links
